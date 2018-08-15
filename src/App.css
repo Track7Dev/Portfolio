@@ -1,10 +1,33 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #252525;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(117, 117, 117);
+border: 1px solid rgb(31, 27, 83);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(0, 127, 40);
+}
 .App {
   text-align: center;
   margin: 0;
   width: 100%;
   height: 100%;
   background-color: red;
-  flex-direction: column;
+  display: flex;
   position: absolute;
   overflow: hidden;
 }
@@ -12,6 +35,7 @@
 .Header {
   flex: 1;
   height: 3rem;
+  z-index: 10;
   background-color: rgb(39, 0, 98);
   border-bottom: 0.1rem solid black;
   font-size: 1rem;
@@ -21,16 +45,19 @@
   padding: 0 1rem;
   font-weight: 700;
   color: white;
+  
 }
 
 .App-Main_View {
+  padding-top: 3rem;
   flex: 1;
-  height: calc(100% - 2rem);
+  display: flex;
+  height: calc(100%);
   background-color: whitesmoke;
   flex-direction: column ;
   overflow-y: auto;
   overflow-x: hidden; 
-  position: relative;
+  position: absolute;
 }
 .App-Splash_Left {
   position: absolute;
@@ -72,11 +99,12 @@
 .App-Main-Section {
   width: 100%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-Main-Section-Header {
   width: 100%;
-  min-height: 300px;
   position: relative;
   background: red;
   display: flex;
@@ -117,44 +145,101 @@ border: 2px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  padding: 1rem;
 }
 
 .App-Main-Projects_Wrapper {
   width: 100%;
+  height: 100%;
   flex-direction: column;
   display: flex;
+  flex: 1;
+}
+.App-Main-Blog_Wrapper {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+}
+.App-Main-Traits_Wrapper {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  background-color: black;
 }
 .App-Main-Projects {
   width: 100%;
   height: 100%;
   display: flex;
-  position: relative;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
   flex-wrap: wrap;
   flex: 1;
   background-color: teal;
 }
-
-.App-Main-Projects_Wrapper header {
+.App-Main-Traits {
   width: 100%;
-  flex:1;
-  padding: 1rem 0;
-  background-color: red;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: teal;
+}
+.App-Main-Blog {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: purple;
 }
 
-.App-Main-Projects > div {
+.App-Main-Projects_Wrapper header,
+.App-Main-Blog_Wrapper header{
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: left;
+  padding-left: 1rem;
+  align-items: center;
+  background-color: rgb(78, 3, 3);
+  color: white; 
+
+}
+
+
+
+.App-Main-Projects > div  {
+  margin: 1.2rem;
+}
+.App-Main-Traits > div  {
+  margin: 1.2rem;
+}
+.App-Main-Blog > div  {
   margin: 1.2rem;
 }
 
 .App-Main-Menu-Close, .App-Main-Menu-Open {
   height: 100%;
-  width: 50%;
-  min-width: 300px;
+  width: 300px;
   background-color: gray;
-  position: absolute;
-  top:0;
+  position: fixed;
+  top:3rem;
   z-index: 8;
 }
 .App-Main-Menu-Close {

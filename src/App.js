@@ -58,12 +58,31 @@ class App extends Component {
         <div id='menu' className={this.state.animations.headerMenu.open ? "App-Main-Menu-Open" : "App-Main-Menu-Close"}></div>
         <div className="App-Main-Section">
           <header className="App-Main-Section-Header">
+            <div className="App-Main-Traits_Wrapper">
+              <div className="App-Main-Traits">
+                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+              </div>
+            </div>
           </header>
+          <div className="App-Main-Projects_Wrapper">
+              <header> Projects </header>
+              <div className="App-Main-Projects">
+              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+              </div>
+            </div>
           </div>
           <div id="about" className="App-Main-Section">
             <header className="App-Main-Section-Header">
               <div className="App-Main-Profile" >
-                <img src={'images/brandon.jpg'} alt="Brandon Fizer" width="90%" height="90%"/>
+                <img src={`images/brandon.png`} alt="Brandon Fizer" width="90%" height="90%"/>
               </div>
               <div className="App-Main-Profile-Info">
                 <div>
@@ -84,19 +103,21 @@ class App extends Component {
                 
               </div>
             </header>
-            <div className="App-Main-Projects_Wrapper">
-              <header> Projects </header>
-              <div className="App-Main-Projects">
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+            <div className="App-Main-Blog_Wrapper">
+              <header> Blog </header>
+              <div className="App-Main-Blog">
+                <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+                <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+                <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+                <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
               </div>
             </div>
+            <div style={{display: 'flex', padding: '1rem 0', width: '100%', justifyContent: 'center', alignItems: 'center'}}> FOOTER </div>
+          
           </div>
           
         </div>
-       
+
       </div>
     );
   }
