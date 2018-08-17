@@ -83,7 +83,7 @@ class App extends Component {
             <header className="App-Main-Section-Header">
               <div style={{width: '100%', height: '0.5rem', backgroundColor: '#3d5272'}}/>
               <div className="App-Main-Profile" >
-                <img src={`images/brandon.png`} alt="Brandon Fizer" width="90%" height="90%"/>
+                <img src={`images/Brandon.png`} alt="Brandon Fizer" width="90%" height="90%"/>
               </div>
               <div className="App-Main-Profile-Info">
                 <div>
