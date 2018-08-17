@@ -60,22 +60,22 @@ class App extends Component {
           <header className="App-Main-Section-Header">
             <div className="App-Main-Traits_Wrapper">
               <div className="App-Main-Traits">
-                <div><img width="100%" src={'/images/traits/trait1.png'}/></div>
-                <div><img width="100%" src={'/images/traits/trait2.png'}/></div>
-                <div><img width="100%" src={'/images/traits/trait3.png'}/></div>
-                <div><img width="100%" src={'/images/traits/trait4.png'}/></div>
-                <div><img width="100%" src={'/images/traits/trait5.png'}/></div>
-                
+                <div><img width="100%" src={'./images/traits/trait1.png'}/></div>
+                <div><img width="100%" src={'./images/traits/trait2.png'}/></div>
+                <div><img width="100%" src={'./images/traits/trait3.png'}/></div>
+                <div><img width="100%" src={'./images/traits/trait4.png'}/></div>
+                <div><img width="100%" src={'./images/traits/trait5.png'}/></div>
+               . 
               </div>
             </div>
           </header>
           <div className="App-Main-Projects_Wrapper">
               <header> Projects </header>
               <div className="App-Main-Projects">
-                <div><img width="100%" src={'/images/projects/leveld.jpg'}/></div>
-                <div><img width="100%" src={'/images/projects/ftc.jpg'}/></div>
-                <div><img width="100%" src={'/images/projects/arbie.jpg'}/></div>
-                <div><img width="100%" src={'/images/projects/inkbook.jpg'}/></div>
+                <div><img width="100%" src={'./images/projects/leveld.jpg'}/></div>
+                <div><img width="100%" src={'./images/projects/ftc.jpg'}/></div>
+                <div><img width="100%" src={'./images/projects/arbie.jpg'}/></div>
+                <div><img width="100%" src={'./images/projects/inkbook.jpg'}/></div>
               </div>
             </div>
           </div>
