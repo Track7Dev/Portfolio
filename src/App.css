@@ -323,7 +323,7 @@ border: 2px solid #1e2939;
   color: #6689bf
 }
 .App-Main-Menu-Close {
-  animation: menu_close 0.4s forwards;
+  animation: menu_close 0.5s forwards;
 }
 
 .App-Main-Menu-Open {
@@ -374,8 +374,8 @@ border: 2px solid #1e2939;
   to{opacity: 1}
 }
 @keyframes splash_close {
-  0%{opacity: 1; }
-  100%{opacity: 0;}
+  0%{opacity: 1; height: 100%;}
+  100%{opacity: 0; height: 0;}
 }
 
 @keyframes menu_open {
