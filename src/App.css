@@ -74,7 +74,7 @@ background:  #b2c4df;
   width: 50%;
   background-color: rgb(39, 0, 98);
   left: 0%;
-  animation: splash_lt 3.5s ease-in;
+  animation: splash_lt 5s ease-in;
   opacity: 0.75;
 }
 .App-Splash_Right {
@@ -83,7 +83,7 @@ background:  #b2c4df;
   width: 50%;
   right: 0%;
   background-color: rgb(39, 0, 98);
-  animation: splash_rt 3.5s ease-in ;
+  animation: splash_rt 5s ease-in ;
   opacity: 0.75;
 }
 
@@ -91,7 +91,7 @@ background:  #b2c4df;
   opacity: 0;
   font-size: 1.5rem;
   z-index: 10;
-  animation: splash_logo 2.5s 4s ease-in forwards; 
+  animation: splash_logo 2.5s 6s ease-in forwards; 
 }
 .App-Splash_Wrapper {
   height: 100%;
