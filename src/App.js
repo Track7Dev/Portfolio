@@ -23,10 +23,6 @@ class App extends Component {
 
       <div className="App">
         <div className="App-Splash_Wrapper">
-          <p style={{position: 'absolute', width: '80%', fontSize: 'calc(1rem + 1.5vw)', color: 'white'}}>
-            "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me."<br />
-            <span style={{color: '#b2c4df'}}>-Steve Jobs</span>
-          </p>
           <div className="App-Splash_Logo" ><img width="30%" alt='logo' src={'images/app/trackseven.png'}/><p>Building Tomorrow... For Today.</p></div>
           <div className="App-Splash_Left" />
           <div className="App-Splash_Right" />

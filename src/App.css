@@ -91,7 +91,7 @@ background:  #b2c4df;
   opacity: 0;
   font-size: 1.5rem;
   z-index: 10;
-  animation: splash_logo 2.5s 5.4s ease-in forwards; 
+  animation: splash_logo 1s ease-in forwards; 
 }
 .App-Splash_Wrapper {
   height: 100%;
@@ -105,7 +105,7 @@ background:  #b2c4df;
   align-items: center;
   flex-direction: row;
   overflow: hidden;
-  animation: splash_close 1s 9s ease-in-out forwards;
+  animation: splash_close 1s 2S ease-in-out forwards;
   z-index: 10;
   background-color: #3d5272;
   color: white;
@@ -323,7 +323,7 @@ border: 2px solid #1e2939;
   color: #6689bf
 }
 .App-Main-Menu-Close {
-  animation: menu_close 0.5s forwards;
+  animation: menu_close 0.4s forwards;
 }
 
 .App-Main-Menu-Open {
@@ -374,8 +374,8 @@ border: 2px solid #1e2939;
   to{opacity: 1}
 }
 @keyframes splash_close {
-  0%{opacity: 1; height: 100%;}
-  100%{opacity: 0; height: 0;}
+  0%{opacity: 1; }
+  100%{opacity: 0;}
 }
 
 @keyframes menu_open {
