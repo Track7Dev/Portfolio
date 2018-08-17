@@ -73,7 +73,6 @@ class App extends Component {
             <p onClick={
               () => window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body="
               }>CONTACT</p>
-            <img src={'images/app/trackseven.png'} width="80%" style={{opacity: '0.07', marginTop: '15rem'}}/>
         </div>
         <div className="App-Main-Section">
           <header className="App-Main-Section-Header">
