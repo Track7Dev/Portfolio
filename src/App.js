@@ -165,7 +165,7 @@ class App extends Component {
                 () => window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body="
               }/>
               <img alt='contact' src={'images/app/mobile.png'} width="50rem"onClick={
-                () => {}//SHOW NUNBER
+                () =>  window.location.href = "tel:+19107581607"
               }/>
             </div>
           </div>
