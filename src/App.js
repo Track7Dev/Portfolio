@@ -32,7 +32,7 @@ class App extends Component {
         </div>
         <header className="Header">
           <img height="100%" alt='Brandon Fizer' style={{cursor:'pointer'}} src={'images/app/brandonlogo.png'} onClick={
-            () => window.location.assign(window.location.origin)
+            () => window.location.open(window.location.origin)
           } />
           <div style={{display: 'flex', flex:1}}/>
           <div
@@ -64,12 +64,18 @@ class App extends Component {
         </header>
         <div className="App-Main_View">
         <div id='menu'  className={this.state.animations.headerMenu.open ? "App-Main-Menu-Open" : "App-Main-Menu-Close"}>
-            <p>HOME</p>
-            <p>ABOUT ME</p>
             <p onClick={
-                () =>  window.location.assign('Resume-BrandonFizer_S.pdf')
+                () =>  window.open(window.location.origin)
+              }>HOME</p>
+            <p onClick={
+                () =>  window.location.replace('#about')
+              }>ABOUT ME</p>
+            <p onClick={
+                () =>  window.open('Resume-BrandonFizer_S.pdf','_blank')
               }>RESUME</p>
-            <p>CONTACT</p>
+            <p onClick={
+              () => window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body="
+              }>CONTACT</p>
             <img src={'images/app/trackseven.png'} width="80%" style={{opacity: '0.07', marginTop: '15rem'}}/>
         </div>
         <div className="App-Main-Section">
@@ -89,16 +95,16 @@ class App extends Component {
               <header> <img alt='project' height="90rem"style={{zIndex: 1, marginBottom: '1rem'}} src={"images/app/Projects.png"} /> </header>
               <div className="App-Main-Projects">
                 <div onClick={
-                    () => window.location.assign('https://github.com/leveld/')
+                    () => window.open('https://github.com/leveld/','_blank')
                 }><img alt='leveld' width="100%" src={'images/projects/leveld.jpg'}/></div>
                 <div onClick={
-                    () => window.location.assign('https://github.com/Fayetteville-Tattoo-Company')
+                    () => window.open('https://github.com/Fayetteville-Tattoo-Company','_blank')
                 }><img alt='FTC' width="100%" src={'images/projects/FTC.jpg'}/></div>
                 <div onClick={
-                    () => window.location.assign('https://github.com/gemini-hackathon/arbie')
+                    () => window.open('https://github.com/gemini-hackathon/arbie','_blank')
                 }><img alt='arbie' width="100%" src={'images/projects/Arbie.jpg'}/></div>
                 <div onClick={
-                    () => window.location.assign('https://github.com/track7dev/inkbook')
+                    () => window.open('https://github.com/track7dev/inkbook','_blank')
                 }><img alt='inkbook' width="100%" src={'images/projects/Inkbook.jpg'}/></div>
               </div>
               <header/>
@@ -137,7 +143,7 @@ class App extends Component {
 
                 <div>
                   <div className="App-Main-Blog_Post" onClick={
-                    () => window.location.assign('https://track7dev.github.io/The-Engine/')
+                    () => window.open('https://track7dev.github.io/The-Engine/', '_blank')
                   }>
                     <div style={{position: 'absolute', background: '#1e2939', width: '100%', top:0, right:0, padding: '0.4rem', borderBottomLeftRadius: 5, borderTopRightRadius:5}}>August 3, 2018</div>
                     <p>The Engine Inside the Engineer</p>
@@ -148,17 +154,17 @@ class App extends Component {
             </div>
             <div className="App-Main-Footer"> 
             <div onClick={
-              () => window.location.assign('https://github.com/TrackSevenDevelopment')
+              () => window.open('https://github.com/TrackSevenDevelopment', '_blank')
             } style={{display: 'flex', }} >©2018 Track Seven Development</div>
             <div >
               <img alt='contact' src={'images/app/github.png'} width="50rem" onClick={
-                () => window.location.assign('https://github.com/track7dev')
+                () => window.open('https://github.com/track7dev','_blank')
               }/>
               <img alt='contact' src={'images/app/linkedin.png'} width="50rem"onClick={
-                () => window.location.assign('https://linkedin.com/in/brandon-fizer')
+                () => window.open('https://linkedin.com/in/brandon-fizer','_blank')
               }/>
               <img alt='contact' src={'images/app/email.png'} width="50rem"onClick={
-                () => {}//SHOW EMAIL
+                () => window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body="
               }/>
               <img alt='contact' src={'images/app/mobile.png'} width="50rem"onClick={
                 () => {}//SHOW NUNBER

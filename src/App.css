@@ -313,13 +313,11 @@ border: 2px solid #1e2939;
 
 .App-Main-Menu-Close p, .App-Main-Menu-Open p {
   cursor: pointer;
-  background: rgba(34, 64, 110, 0.5);
-  transition: backgroundColor 0.5s, color 0.5s ease-in-out;
+  transition:color 0.5s ease-in-out;
 }
 .App-Main-Menu-Close p:hover, .App-Main-Menu-Open p:hover {
   cursor: pointer;
-  background: rgba(151, 189, 241, 0.5);
-  color: black
+  color: #6689bf
 }
 .App-Main-Menu-Close {
   animation: menu_close 1s forwards;
