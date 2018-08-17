@@ -31,7 +31,7 @@ class App extends Component {
           <div className="App-Splash_Right" />
         </div>
         <header className="Header">
-          <img height="100%" alt='Brandon Fizer' style={{cursor:'pointer'}} src={'images/app/brandonlogo.png'} onClick={
+          <img height="100%" alt='Brandon Fizer' style={{cursor:'pointer'}} src={'images/app/Brandonlogo.png'} onClick={
             () => window.location.open(window.location.origin)
           } />
           <div style={{display: 'flex', flex:1}}/>
