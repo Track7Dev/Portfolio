@@ -8,36 +8,45 @@ width: 0.5rem;
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: #252525;
+background: #1e2939;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: rgb(117, 117, 117);
+background:  #eff3f8;
 border: 1px solid rgb(31, 27, 83);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: rgb(0, 127, 40);
+background:  #b2c4df;
 }
+
+/*
+  #eff3f8
+  #b2c4df
+  #6689bf
+  #3d5272
+  #1e2939
+*/
+
 .App {
   text-align: center;
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
-  display: flex;
+  background-color: #eff3f8;
   position: absolute;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .Header {
-  flex: 1;
   height: 3rem;
+  width: 100%;
   z-index: 10;
   background-color: rgb(39, 0, 98);
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid white;
   font-size: 1rem;
   display: flex;
   justify-content: left;
@@ -52,40 +61,41 @@ background: rgb(0, 127, 40);
   padding-top: 3rem;
   flex: 1;
   display: flex;
-  height: calc(100%);
-  background-color: whitesmoke;
+  height: 100%;
+  background-color: #6689bf;
   flex-direction: column ;
+  position: absolute;
   overflow-y: auto;
   overflow-x: hidden; 
-  position: absolute;
 }
 .App-Splash_Left {
   position: absolute;
   height: 100%;
   width: 50%;
-  background-color: red;
+  background-color: rgb(39, 0, 98);
   left: 0%;
-  animation: splash_lt 1s ease-in;
+  animation: splash_lt 2.5s ease-in;
 }
 .App-Splash_Right {
   position: absolute;
   height: 100%;
   width: 50%;
   right: 0%;
-  background-color: red;
-  animation: splash_rt 1s ease-in;
+  background-color: rgb(39, 0, 98);
+  animation: splash_rt 2.5s ease-in ;
 }
 
 .App-Splash_Logo {
   opacity: 0;
   font-size: 1.5rem;
   z-index: 10;
-  animation: splash_logo 0.7s 1.4s ease-in forwards; 
+  animation: splash_logo 0.7s 2s ease-in forwards; 
 }
 .App-Splash_Wrapper {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-image: url('images/creativity.jpg');
+  background-size: 100% 100%;
   opacity: 1;
   position: absolute;
   display: flex;
@@ -98,19 +108,19 @@ background: rgb(0, 127, 40);
 }
 .App-Main-Section {
   width: 100%;
-  min-height: 100%;
-  display: flex;
+  height: auto;
   flex-direction: column;
 }
 
 .App-Main-Section-Header {
   width: 100%;
   position: relative;
-  background: red;
+  background: #b2c4df;
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
   flex-wrap: wrap;
 }
 
@@ -121,6 +131,8 @@ min-width: 300px;
 display: flex;
 justify-content: center;
 align-items: center;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 .App-Main-Profile > img{
 border-radius: 100%;
@@ -128,7 +140,7 @@ border: 2px solid white;
 }
 
 .App-Main-Profile-Info {
-  background-color: green;
+  background-color: #3d5272;
   height: auto;
   min-height: 300px;
   min-width: 300px;
@@ -139,7 +151,7 @@ border: 2px solid white;
 }
 
 .App-Main-Profile-Info > div {
-  background-color: purple;
+  background-color: 	#6689bf;
   width: 95%;
   min-height: 270px;
   display: flex;
@@ -147,31 +159,30 @@ border: 2px solid white;
   align-items: center;
   color: white;
   padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: 1px solid white;
 }
 
 .App-Main-Projects_Wrapper {
   width: 100%;
-  height: 100%;
   flex-direction: column;
   display: flex;
   flex: 1;
 }
 .App-Main-Blog_Wrapper {
   width: 100%;
-  height: 100%;
   flex-direction: column;
   display: flex;
   flex: 1;
 }
 .App-Main-Traits_Wrapper {
   width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   display: flex;
   flex: 1;
-  background-color: black;
 }
 .App-Main-Projects {
   width: 100%;
@@ -182,7 +193,6 @@ border: 2px solid white;
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
-  background-color: teal;
 }
 .App-Main-Traits {
   width: 100%;
@@ -194,7 +204,6 @@ border: 2px solid white;
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
-  background-color: teal;
 }
 .App-Main-Blog {
   width: 100%;
@@ -205,7 +214,7 @@ border: 2px solid white;
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
-  background-color: purple;
+  background-color: #b2c4df;
 }
 
 .App-Main-Projects_Wrapper header,
@@ -217,8 +226,9 @@ border: 2px solid white;
   justify-content: left;
   padding-left: 1rem;
   align-items: center;
-  background-color: rgb(78, 3, 3);
+  background-color:  rgb(39, 0, 98);
   color: white; 
+
 
 }
 
@@ -226,9 +236,30 @@ border: 2px solid white;
 
 .App-Main-Projects > div  {
   margin: 1.2rem;
+  border-bottom: '1px solid black';
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  background: #3d5272;
+  border: 1px solid white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.App-Main-Projects > div:hover {
+  opacity: 1;
+  border: 1px solid #3d5272;
 }
 .App-Main-Traits > div  {
   margin: 1.2rem;
+  opacity: 0.7;
+  height: 250px; 
+  width: 250px; 
+  border: 1px solid black; 
+  background-color: #3d5272; 
+  border-radius: 5px;
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 .App-Main-Blog > div  {
   margin: 1.2rem;
@@ -237,7 +268,8 @@ border: 2px solid white;
 .App-Main-Menu-Close, .App-Main-Menu-Open {
   height: 100%;
   width: 300px;
-  background-color: gray;
+  background-color: rgb(39, 0, 98);
+  border-left: 2px solid #b2c4df; 
   position: fixed;
   top:3rem;
   z-index: 8;
@@ -277,3 +309,7 @@ border: 2px solid white;
   to{right:-100%;}
 }
 
+@keyframes glow {
+  from{border: 2px solid white}
+  to{border: 2px solid transparent}
+}

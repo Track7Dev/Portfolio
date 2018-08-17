@@ -60,27 +60,28 @@ class App extends Component {
           <header className="App-Main-Section-Header">
             <div className="App-Main-Traits_Wrapper">
               <div className="App-Main-Traits">
-                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
-                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
-                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
-                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
-                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
-                <div style={{height: 200, width: 200, border: '1px solid black', backgroundColor: 'grey'}}/>
+                <div><img width="100%" src={'images/traits/trait1.png'}/></div>
+                <div><img width="100%" src={'images/traits/trait2.png'}/></div>
+                <div><img width="100%" src={'images/traits/trait3.png'}/></div>
+                <div><img width="100%" src={'images/traits/trait4.png'}/></div>
+                <div><img width="100%" src={'images/traits/trait5.png'}/></div>
+                
               </div>
             </div>
           </header>
           <div className="App-Main-Projects_Wrapper">
               <header> Projects </header>
               <div className="App-Main-Projects">
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
-              <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
+                <div><img width="100%" src={'images/projects/leveld.jpg'}/></div>
+                <div><img width="100%" src={'images/projects/ftc.jpg'}/></div>
+                <div><img width="100%" src={'images/projects/arbie.jpg'}/></div>
+                <div><img width="100%" src={'images/projects/inkbook.jpg'}/></div>
               </div>
             </div>
           </div>
           <div id="about" className="App-Main-Section">
             <header className="App-Main-Section-Header">
+              <div style={{width: '100%', height: '0.5rem', backgroundColor: '#3d5272'}}/>
               <div className="App-Main-Profile" >
                 <img src={`images/brandon.png`} alt="Brandon Fizer" width="90%" height="90%"/>
               </div>
@@ -103,6 +104,8 @@ class App extends Component {
                 
               </div>
             </header>
+            <div style={{width: '100%', height: '0.5rem', backgroundColor: '#3d5272'}}/>
+
             <div className="App-Main-Blog_Wrapper">
               <header> Blog </header>
               <div className="App-Main-Blog">
@@ -112,9 +115,9 @@ class App extends Component {
                 <div style={{height: 300, width: 300, border: '1px solid black', backgroundColor: 'orange'}}/>
               </div>
             </div>
-            <div style={{display: 'flex', padding: '1rem 0', width: '100%', justifyContent: 'center', alignItems: 'center'}}> FOOTER </div>
           
           </div>
+          <div style={{display: 'flex', padding: '1rem 0', width: '100%', justifyContent: 'center', alignItems: 'center'}}> FOOTER </div>
           
         </div>
 
