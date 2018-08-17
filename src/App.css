@@ -91,7 +91,7 @@ background:  #b2c4df;
   opacity: 0;
   font-size: 1.5rem;
   z-index: 10;
-  animation: splash_logo 2.5s 6s ease-in forwards; 
+  animation: splash_logo 2.5s 5s ease-in forwards; 
 }
 .App-Splash_Wrapper {
   height: 100%;
