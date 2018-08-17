@@ -42,7 +42,7 @@ background:  #b2c4df;
 }
 
 .Header {
-  height: 3rem;
+  height: 4rem;
   width: 100%;
   z-index: 10;
   background-color: rgb(39, 0, 98);
@@ -168,7 +168,10 @@ border: 2px solid #1e2939;
   margin: 0.5rem;
   border: 1px solid white;
 }
-
+.App-Main-Profile-Info > div > p {
+  font-size: 1.5rem;
+  font-family: 'Handlee', cursive;
+}
 .App-Main-Projects_Wrapper {
   width: 100%;
   flex-direction: column;
@@ -276,7 +279,7 @@ border: 2px solid #1e2939;
   opacity: 0.8;
   cursor: pointer;
   transition: opacity 0.5s, border 0.5s;
-  box-shadow: 0px 0px 10px 5px black;
+  box-shadow: 0px 0px 5px 2px black;
 }
 
 .App-Main-Projects > div:hover {

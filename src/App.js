@@ -31,7 +31,7 @@ class App extends Component {
           <div className="App-Splash_Right" />
         </div>
         <header className="Header">
-          <img height="100%" alt='Brandon Fizer' style={{cursor:'pointer'}} src={'images/app/Brandonlogo.png'} onClick={
+          <img height="80%" alt='Brandon Fizer' style={{cursor:'pointer'}} src={'images/app/Brandonlogo.png'} onClick={
             () => window.location.open(window.location.origin)
           } />
           <div style={{display: 'flex', flex:1}}/>
@@ -119,17 +119,11 @@ class App extends Component {
               <div className="App-Main-Profile-Info">
                 <div>
                   <p>
-                    Example Example Example Example Example Example Example Example Example Example Example Example Example Example Example 
-                    Example Example Example Example Example Example Example Example Example Example Example Example Example 
-                    Example Example Example Example Example Example Example Example Example 
-                    Example Example Example Example Example Example Example Example 
-                    Example Example Example Example Example 
-                    Example Example Example Example Example Example Example Example Example Example Example 
-                    Example Example Example Example Example Example Example Example Example Example Example Example Example Example 
-
-                    Example Example 
-                    Example 
-                    Example 
+                    "Brandon Fizer is an inspiring Software Engineer who thrives in the process of creating High Quality work. 
+                    With his ability to distinguish patterns within complex array of problems could ultimately benefit anyone's team. 
+                    While working most of his life as a Professional Tattoo Artist in Fayetteville, NC, he learned the skills needed in developing
+                    solid client relations & services, while also building his creative skills as a developing artist. Brandon's skillset in the 
+                    technical feild spans across the entire techinal stack, Ensuring quality and efficiency throughout each technology and framework."
                   </p>
                 </div>
                 
@@ -145,7 +139,7 @@ class App extends Component {
                   <div className="App-Main-Blog_Post" onClick={
                     () => window.open('https://track7dev.github.io/The-Engine/', '_blank')
                   }>
-                    <div style={{position: 'absolute', background: '#1e2939', width: '100%', top:0, right:0, padding: '0.4rem', borderBottomLeftRadius: 5, borderTopRightRadius:5}}>August 3, 2018</div>
+                    <div style={{position: 'absolute', background: '#1e2939', width: '100%', top:0, right:0, padding: '0.4rem', borderTopLeftRadius: 5, borderTopRightRadius:5}}>August 3, 2018</div>
                     <p>The Engine Inside the Engineer</p>
                   </div>
                 </div>
@@ -155,8 +149,11 @@ class App extends Component {
             <div className="App-Main-Footer"> 
             <div onClick={
               () => window.open('https://github.com/TrackSevenDevelopment', '_blank')
-            } style={{display: 'flex', }} >©2018 Track Seven Development</div>
+            } style={{display: 'flex',cursor: 'pointer' }} >©2018 Track Seven Development</div>
             <div >
+              <div style={{border: '1px solid white', cursor: 'pointer', margin: '0.5rem'}} onClick={
+                () =>  window.open('Resume-BrandonFizer_S.pdf','_blank')
+              }>RESUME</div>
               <img alt='contact' src={'images/app/github.png'} width="50rem" onClick={
                 () => window.open('https://github.com/track7dev','_blank')
               }/>
