@@ -47,7 +47,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm install && npm run build",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
