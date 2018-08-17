@@ -323,11 +323,11 @@ border: 2px solid #1e2939;
   color: #6689bf
 }
 .App-Main-Menu-Close {
-  animation: menu_close 1s forwards;
+  animation: menu_close 0.5s forwards;
 }
 
 .App-Main-Menu-Open {
-  animation: menu_open 1s forwards;
+  animation: menu_open 0.5s forwards;
 }
 
 .App-Main-Footer {
@@ -360,13 +360,13 @@ border: 2px solid #1e2939;
 
 
 @keyframes splash_lt{
-  0%{ left: -100%}
-  80%{ left: -100%}
+  0%{ left: -50%}
+  80%{ left: -50%}
   100%{left: 0}
 }
 @keyframes splash_rt{
-  0%{right: -100%}
-  80%{right: -100%}
+  0%{right: -50%}
+  80%{right: -50%}
   100%{right: 0}
 }
 @keyframes splash_logo {
@@ -379,13 +379,13 @@ border: 2px solid #1e2939;
 }
 
 @keyframes menu_open {
-  from{right:-100%;}
+  from{right:-300px;}
   to{right:0;}
 }
 
 @keyframes menu_close {
   from{right:0;}
-  to{right:-100%;}
+  to{right:-300px;}
 }
 
 @keyframes glow {
