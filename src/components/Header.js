@@ -2,7 +2,7 @@ import React from 'react';
 import Lottie from 'react-lottie';
 
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="Header">
       <img height="80%" alt='Brandon Fizer' style={{cursor:'pointer'}} src={'images/app/Brandonlogo.png'} onClick={
@@ -13,26 +13,18 @@ const Header = () => {
         style={{cursor: 'pointer'}} 
         onClick={() => {
           
-          this.setState({
+          props.main.setState({
             animations:
               Object.assign({},{
                 headerMenu:{
                   isStopped: false,
-                  open: !this.state.animations.headerMenu.open
+                  open: !props.main.state.animations.headerMenu.open
                 }
               })
             }); 
           
         }}>
-        <Lottie options={{
-          loop: false,
-          autoplay: false,
-          animationData: require('../animation/menu_hamburger.json'),
-        }}
-          height={'1.4rem'}
-          width={'1.4rem'}
-          isStopped={this.state.animations.isStopped}              
-        />
+        menu
       </div>
       
     </header>

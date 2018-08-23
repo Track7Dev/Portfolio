@@ -21,17 +21,15 @@ class App extends Component {
       },      
     }
   }
-
-  
   
   render() {
     return (
 
       <div className="App">
         <Splash />
-        <Header />
+        <Header main={this} />
         <div className="App-Main_View">
-        <Menu />
+        <Menu main={this}/>
         <div className="App-Main-Section">
           <header className="App-Main-Section-Header">
             <Traits />

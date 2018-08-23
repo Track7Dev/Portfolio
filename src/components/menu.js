@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Menu = () => {
+const Menu = (props) => {
   return (
-    <div id='menu'  className={this.state.animations.headerMenu.open ? "App-Main-Menu-Open" : "App-Main-Menu-Close"}>
+    <div id='menu'  className={props.main.state.animations.headerMenu.open ? "App-Main-Menu-Open" : "App-Main-Menu-Close"}>
       <p onClick={
           () =>  window.open(window.location.origin)
         }>HOME</p>
