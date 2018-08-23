@@ -24,7 +24,7 @@ const Header = (props) => {
             }); 
           
         }}>
-        menu
+        <i class="fas fa-bars"/>
       </div>
       
     </header>
