@@ -25,7 +25,7 @@ const Header = () => {
         <Lottie options={{
           loop: false,
           autoplay: false,
-          animationData: require('./animation/menu_hamburger.json'),
+          animationData: require('../animation/menu_hamburger.json'),
         }}
           height={'1.4rem'}
           width={'1.4rem'}
