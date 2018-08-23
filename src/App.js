@@ -46,11 +46,11 @@ class App extends Component {
               <div className="App-Main-Profile-Info">
                 <div>
                   <p>
-                    "Brandon Fizer is an inspiring Software Engineer who thrives in the process of creating High Quality work. 
+                    "Brandon Fizer is a Professional Tattoo Artist turned Software Engineer who thrives in the process of creating High Quality work. 
                     With his ability to distinguish patterns within complex array of problems could ultimately benefit anyone's team. 
                     While working most of his life as a Professional Tattoo Artist in Fayetteville, NC, he learned the skills needed in developing
-                    solid client relations & services, while also building his creative skills as a developing artist. Brandon's skillset in the 
-                    technical feild spans across the entire techinal stack, Ensuring quality and efficiency throughout each technology and framework."
+                    solid client relations & services, while also building his creative skills as a developing artist. Brandon's skill-set in the 
+                    technical field spans across the entire technical stack, ensuring quality and efficiency throughout each technology and framework"
                   </p>
                 </div>
                 
