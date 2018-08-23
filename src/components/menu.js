@@ -10,7 +10,7 @@ const Menu = (props) => {
           () =>  window.location.replace('#about')
         }>ABOUT ME</p>
       <p onClick={
-          () =>  window.open('Resume-BrandonFizer_S.pdf','_blank')
+          () =>  window.open('Resume-BrandonFizer-SE.pdf','_blank')
         }>RESUME</p>
       <p onClick={
         () => window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body="
