@@ -4,7 +4,9 @@ import {
   Projects,
   Traits,
   Footer,
-  Splash
+  Splash,
+  Header,
+  Menu
 } from './components';
 
 class App extends Component {
