@@ -24,7 +24,7 @@ const Header = (props) => {
             }); 
           
         }}>
-        <i class="fas fa-bars"/>
+        <i class="fas fa-bars" style={{fontSize: '2rem'}}/>
       </div>
       
     </header>

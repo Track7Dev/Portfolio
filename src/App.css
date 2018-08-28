@@ -238,6 +238,181 @@ border: 2px solid #1e2939;
 
 
 }
+.blend {
+  color: white;
+  transition: color 0.45s;
+  cursor: pointer;
+}
+.blend:hover {
+  color: #97bdf1;
+}
+
+.App-Main-Projects-Overview {
+  background: rgba(0,0,0,0.85);
+  color: white;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  top:0;
+  left:0;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App-Main-Projects-Overview header {
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  border-top-left-radius: 0.5rem;   
+  border-top-right-radius: 0.5rem;
+  border-bottom: 1px solid white; 
+}
+
+.App-Main-Projects-Overview .logo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  border: 1px solid white;
+  
+}
+
+.App-Main-Projects-Overview .logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.App-Main-Projects-Overview > .main-wrapper {
+  background: white;
+  min-width: 300px;
+  max-height: 100%;
+  border-radius: 1rem; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0.9;
+}
+.App-Main-Projects-Overview > .main-wrapper > .wrapper {
+  background: #b2c4df;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  border-bottom-left-radius: 0.5rem;   
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem
+}
+
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .screenshot {
+  min-width: 200px;
+  max-width: 35%;
+  padding: 1rem;
+  padding-left: 0;
+}
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display {
+  background: #3d5272;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  align-items: center;
+  padding: 1rem;
+  max-height: 100%;
+}
+.stats {
+  width: 100%;
+  background-color: #1e2939;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+.repos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.stats-wrapper{
+  width: 100%;
+  background: #b2c4df;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0;
+}
+.repo {
+  background-color: #1e2939;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 2px solid #1c61c9;
+  border-radius: 0.45rem;
+  cursor: pointer;
+  transition: border 0.7s;
+}
+.repo:hover {
+  border: 2px solid white;
+}
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .data {
+  width: 100%;
+  background: #b2c4df;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-wrap: wrap;
+}
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .data > .links {
+  height: 7rem;
+}
+
+
+
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .data > .team {
+  height: 7rem;
+  width: 100%;
+  flex: 1;
+}
+
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .data .tab {
+  height: 100%;
+}
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .data > .links > .img {
+  width: 7rem;
+  background: #1e2939;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.45s border, 0.45s color;
+
+}
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .data > .links > .img:hover {
+  border: 0.8rem solid #6689bf;
+}
+
+.App-Main-Projects-Overview > .main-wrapper > .wrapper > .display > .bio {
+  background: #b2c4df;
+  border-radius: 0.5rem; 
+  color: black;
+  display: flex;
+  flex: 1;
+  min-width: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
 
 .App-Main-Blog_Post {
   height: 200px; 
@@ -365,8 +540,18 @@ border: 2px solid #1e2939;
 .App-Main-Footer img:hover {
   border: 7px solid #6689bf;
 }
+.load {
+  animation: spin 1.5s infinite linear forwards;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
 
 
+@keyframes spin {
+  from{transform: Rotate(0deg)}
+  from{transform: Rotate(360deg)}
+}
 
 
 @keyframes splash_lt{

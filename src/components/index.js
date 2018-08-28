@@ -4,6 +4,7 @@ import Traits from './traits';
 import Splash from './splash';
 import Header from './Header';
 import Menu from './menu';
+import Overview from './overview';
 
 export {
   Footer,
@@ -11,5 +12,6 @@ export {
   Traits,
   Splash,
   Header,
-  Menu
+  Menu,
+  Overview
 }
