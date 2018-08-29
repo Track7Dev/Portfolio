@@ -11,7 +11,7 @@ export default class Stats extends Component {
   componentDidMount(){
     console.log(this.state.current);
     if(this.org){
-      axios.get(`https://api.github.com/users/${this.github}/repos`)
+      axios.get(`https://api.github.com/users/${this.github}/repos`, {headers: {Authorization: process.env.REACT_APP_GITHUB}})
       .then((repos) => {
 
         setTimeout(() => this.displayStats(repos.data[0].full_name), 2000);
@@ -25,13 +25,13 @@ export default class Stats extends Component {
   displayStats = (repo_name) => {
     this.setState({display: null, current: repo_name});
     setTimeout(() => 
-    axios.get(`https://api.github.com/repos/${repo_name}`)
+    axios.get(`https://api.github.com/repos/${repo_name}`, {headers: {Authorization: process.env.REACT_APP_GITHUB}})
         .then(async (repo) => {
           console.log(repo)
-          const contributors = await axios.get(`https://api.github.com/repos/${repo_name}/contributors`);
+          const contributors = await axios.get(`https://api.github.com/repos/${repo_name}/contributors`,{headers: {Authorization: process.env.REACT_APP_GITHUB}});
           const updatedOn = repo.data.updated_at.split('T')[0];
-          const commits = await axios.get(`https://api.github.com/repos/${repo_name}/commits`);
-          const branches = await axios.get(`https://api.github.com/repos/${repo_name}/branches`);
+          const commits = await axios.get(`https://api.github.com/repos/${repo_name}/commits`, {headers: {Authorization: process.env.REACT_APP_GITHUB}});
+          const branches = await axios.get(`https://api.github.com/repos/${repo_name}/branches`, {headers: {Authorization: process.env.REACT_APP_GITHUB}});
           this.setState({
             display: 
               
@@ -43,7 +43,6 @@ export default class Stats extends Component {
               </div>
           });
           
-          console.log(contributors.data.length, updatedOn, commits.data.length, branches.data.length);
         })
       , 1500);
   }

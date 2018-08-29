@@ -11,12 +11,15 @@ export default class Projects extends Component {
       <div className="App-Main-Projects_Wrapper">
         <header> <img alt='project' height="90rem"style={{zIndex: 1, marginBottom: '1rem'}} src={"images/app/Projects.png"} /> </header>
         <div className="App-Main-Projects">
+          {/* Leveld Project */}
           <div onClick={
               () => {
                 this.setState({
                   overview: <Overview main={this} links={{
                     github: 'Leveld',
-                    repos: ['lan-frontend, lan-db, lan-auth, lan-utils']
+                    repos: ['lan-frontend, lan-db, lan-auth, lan-utils'],
+                    domain:'http://leveld.network'
+
                   }} 
                   org={true}
                   name='Leveld' 
@@ -26,9 +29,25 @@ export default class Projects extends Component {
                 });
               }
           }><img alt='leveld' width="100%" src={'images/projects/leveld.jpg'}/></div>
+
+          {/* Fayetteville Tattoo Company */}
           <div onClick={
-              () => window.open('https://github.com/Fayetteville-Tattoo-Company','_blank')
-          }><img alt='FTC' width="100%" src={'images/projects/FTC.jpg'}/></div>
+              () => {
+                this.setState({
+                  overview: <Overview main={this} links={{
+                    github: 'Fayetteville-Tattoo-Company',
+                    domain:'http://ftc.track7dev.tech'
+
+                  }} 
+                  org={true}
+                  name='Fayetteville Tattoo Company' 
+                  logo='images/projects/FTC.jpg' 
+                  screenshot='images/projects/leveld_product_demo.gif'
+                  />
+                });
+              }
+          }><img alt='leveld' width="100%" src={'images/projects/FTC.jpg'}/></div>
+
           <div onClick={
               () => window.open('https://github.com/gemini-hackathon/arbie','_blank')
           }><img alt='arbie' width="100%" src={'images/projects/Arbie.jpg'}/></div>
