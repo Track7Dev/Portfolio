@@ -18,12 +18,12 @@ export default class Overview extends Component {
   }
   componentWillMount(){
     if(!this.state.bio){
-      axios.get(`https://api.github.com/users/${this.links.github}`, {headers:{Authorization: process.env.REACT_APP_GITHUB}})
+      const link = this.org ? 'users' : 'repos';
+      axios.get(`https://api.github.com/${link}/${this.links.github}`, {headers:{Authorization: process.env.REACT_APP_GITHUB}})
       .then((project) => {
-        console.log(project.data.bio);
-        this.setState({bio: project.data.bio});
+        console.log(project.data);
+        this.setState({bio: project.data.bio || project.data.description});
       });
-
     }
   }
   render(){
@@ -64,10 +64,10 @@ export default class Overview extends Component {
                 <img className='tab' src={'images/app/owner_side_tab.jpg'}/>
                 
               </div> */}
-              <div className='team'>
+              {/* <div className='team'>
                 <img className='tab' src={'images/app/team_side_tab.jpg'}/>
                 
-              </div>
+              </div> */}
             </div>
             
           </div>

@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class Stats extends Component {
   constructor(props){
     super(props);
-    this.state = {repos: null, display: null, current: null}
+    this.state = {repos: [], display: null, current: null}
     this.github = props.github;
     this.org = props.org;
   }
@@ -20,6 +20,7 @@ export default class Stats extends Component {
         })
       });
     }
+    if(!this.org) setTimeout(() => this.displayStats(this.github), 2000);
   }
   
   displayStats = (repo_name) => {
@@ -58,9 +59,9 @@ export default class Stats extends Component {
           }) : <div style={{color: 'black'}}>{
             this.state.current 
               ?
-                `Loading ${this.state.current.split('/')[1]}` 
+                `Loading ${String(this.state.current.split('/')[1]).toUpperCase()}` 
               :
-                `Finding repositories from ${this.org ? 'the organization ' : null}${this.github}`
+                `Finding repositor${this.org ? 'ies' : 'y'} from ${this.org ? 'the organization ' : ''}${this.org ? String(this.github).toUpperCase() : String(this.github.split('/')[0]).toUpperCase()}`
           }</div>} </div>
         {this.state.display}
         {!this.state.display ? <div style={{width: '100%'}}><i class="fas fa-spinner -- load"></i> </div> : null}

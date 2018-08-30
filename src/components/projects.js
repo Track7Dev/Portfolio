@@ -42,18 +42,48 @@ export default class Projects extends Component {
                   org={true}
                   name='Fayetteville Tattoo Company' 
                   logo='images/projects/FTC.jpg' 
-                  screenshot='images/projects/leveld_product_demo.gif'
+                  screenshot='images/projects/ftc_product_demo.gif'
                   />
                 });
               }
           }><img alt='leveld' width="100%" src={'images/projects/FTC.jpg'}/></div>
+          
+          {/* Arbie */}
+          <div onClick={
+              () => {
+                this.setState({
+                  overview: <Overview main={this} links={{
+                    github: 'gemini-hackathon',
+                    domain:'http://arbie-.herokuapp.com'
 
+                  }} 
+                  org={true}
+                  name='Arbie' 
+                  logo='images/projects/Arbie.jpg' 
+                  screenshot='images/projects/arbie_product_demo.gif'
+                  />
+                });
+              }
+          }><img alt='leveld' width="100%" src={'images/projects/Arbie.jpg'}/></div>
+          
+          {/* Inkbook */}
           <div onClick={
-              () => window.open('https://github.com/gemini-hackathon/arbie','_blank')
-          }><img alt='arbie' width="100%" src={'images/projects/Arbie.jpg'}/></div>
-          <div onClick={
-              () => window.open('https://github.com/track7dev/inkbook','_blank')
-          }><img alt='inkbook' width="100%" src={'images/projects/Inkbook.jpg'}/></div>
+              () => {
+                this.setState({
+                  overview: <Overview main={this} links={{
+                    github: 'track7dev/inkbook',
+                    domain:''
+                  }} 
+                  org={false}
+                  name='InkBook' 
+                  logo='images/projects/inkbook.jpg' 
+                  screenshot='images/projects/inkbook_product_demo.gif'
+                  />
+                });
+              }
+          }><img alt='leveld' width="100%" src={'images/projects/inkbook.jpg'}/></div>
+
+          
         </div>
         {this.state.overview}
       </div>
