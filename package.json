@@ -47,7 +47,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/prod.js",
+    "start": "node -r dotenv/config scripts/prod.js",
     "dev": "node scripts/start.js",
     "heroku-postbuild": "npm run build",
     "build": "node scripts/build.js",
