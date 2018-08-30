@@ -1,5 +1,4 @@
 import React from 'react';
-import Lottie from 'react-lottie';
 
 
 const Header = (props) => {
@@ -24,7 +23,7 @@ const Header = (props) => {
             }); 
           
         }}>
-        <i class="fas fa-bars" style={{fontSize: '2rem'}}/>
+        <i className="fas fa-bars" style={{fontSize: '2rem'}}/>
       </div>
       
     </header>

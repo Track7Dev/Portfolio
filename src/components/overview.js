@@ -21,30 +21,32 @@ export default class Overview extends Component {
       const link = this.org ? 'users' : 'repos';
       axios.get(`https://api.github.com/${link}/${this.links.github}`, {headers:{Authorization: process.env.REACT_APP_GITHUB}})
       .then((project) => {
-        console.log(project.data);
         this.setState({bio: project.data.bio || project.data.description});
       });
     }
   }
+
+  close = () => this.main.setState({overview: null});
   render(){
     return (
       <div className='App-Main-Projects-Overview'>
         <div className='main-wrapper'>
         <header>
           <div className='logo'>
-            {this.logo ? <img  src={this.logo}/> : null}
+            {this.logo ? <img alt='logo'  src={this.logo}/> : null}
           </div>
           <div style={{flex: 1, fontSize: 'calc(1rem + 1.5vw)', padding: '0 1rem', fontFamily: "'Playfair Display', serif"}}>
             {String(this.name).split('').slice(0, 30).join('')}
           </div>
-          <div onClick={() => this.main.setState({overview: null})}>
+          {/* ERROR: fixing with redux */}
+          <div onClick={() => this.close()}> 
           <i className="far fa-times-circle -- blend"/>
           </div>
         </header>
 
         <div className='wrapper'>
           <div className='display'>
-            <div className='screenshot'><img width='100%'src={this.screenshot} /></div>
+            <div className='screenshot'><img alt='screenshot' width='100%'src={this.screenshot} /></div>
             <div className='bio'>
               {this.state.bio ? this.state.bio : 'No Description Available'}
             </div>
@@ -67,7 +69,7 @@ export default class Overview extends Component {
                   }}>
 
                   <div id='source' className='Overview-link-title' >SOURCE</div>
-                  <img className='Overview-link-img' src={'images/app/github.png'} onClick={
+                  <img alt='github' className='Overview-link-img' src={'images/app/github.png'} onClick={
                     () => window.open(`https://github.com/${this.links.github}`,'_blank')
                   }/>
                 </div>
@@ -87,7 +89,7 @@ export default class Overview extends Component {
                     overflow: 'hidden'
                   }}>
                     <div id='app' className='Overview-link-title'>APP</div>
-                    <img className='Overview-link-img' src={this.logo} onClick={
+                    <img alt='app' className='Overview-link-img' src={this.logo} onClick={
                       () => window.open(this.links.domain,'_blank')
                     }/>
                   </div>

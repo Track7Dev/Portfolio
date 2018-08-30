@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import { connect } from 'net';
 
 export default class Stats extends Component {
   constructor(props){
@@ -10,7 +9,7 @@ export default class Stats extends Component {
     this.org = props.org;
   }
   componentDidMount(){
-    this.timerStart(45);
+    this.timerStart(30);
     if(this.org){
       axios.get(`https://api.github.com/users/${this.github}/repos`, {headers: {Authorization: process.env.REACT_APP_GITHUB}})
       .then((repos) => {
@@ -23,13 +22,15 @@ export default class Stats extends Component {
     }
     if(!this.org) setTimeout(() => this.displayStats(this.github), 2000);
   }
+  componentWillUnmount(){
+
+  }
   
   displayStats = (repo_name) => {
     this.setState({display: null, current: repo_name});
     setTimeout(() => 
     axios.get(`https://api.github.com/repos/${repo_name}`, {headers: {Authorization: process.env.REACT_APP_GITHUB}})
         .then(async (repo) => {
-          console.log(repo)
           const contributors = await axios.get(`https://api.github.com/repos/${repo_name}/contributors`,{headers: {Authorization: process.env.REACT_APP_GITHUB}});
           const updatedOn = repo.data.updated_at.split('T')[0];
           const commits = await axios.get(`https://api.github.com/repos/${repo_name}/commits`, {headers: {Authorization: process.env.REACT_APP_GITHUB}});
@@ -123,7 +124,7 @@ export default class Stats extends Component {
                     `Finding repositor${this.org ? 'ies' : 'y'} from ${this.org ? 'the organization ' : ''}${this.org ? String(this.github).toUpperCase() : String(this.github.split('/')[0]).toUpperCase()}`
           }</div>} </div>
         {this.state.display}
-        {!this.state.display ? <div style={{width: '100%'}}><i class="fas fa-spinner -- load"></i> </div> : null}
+        {!this.state.display ? <div style={{width: '100%'}}>{!this.state.networkError && <i className="fas fa-spinner -- load"/>}</div> : null}
       </div>
     );
   }

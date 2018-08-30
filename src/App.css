@@ -543,7 +543,8 @@ border: 2px solid #1e2939;
 .App-Main-Menu-Close, .App-Main-Menu-Open {
   height: 100%;
   width: 300px;
-  background-color: #1e2939;
+  background-color: #262376;
+  padding: 1rem;
   border-left: 2px solid #b2c4df; 
   position: fixed;
   top:3rem;

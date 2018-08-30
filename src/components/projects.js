@@ -17,7 +17,6 @@ export default class Projects extends Component {
                 this.setState({
                   overview: <Overview main={this} links={{
                     github: 'Leveld',
-                    repos: ['lan-frontend, lan-db, lan-auth, lan-utils'],
                     domain:'http://leveld.network'
 
                   }} 
