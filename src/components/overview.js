@@ -34,8 +34,8 @@ export default class Overview extends Component {
           <div className='logo'>
             {this.logo ? <img  src={this.logo}/> : null}
           </div>
-          <div style={{flex: 1}}>
-            {this.name}
+          <div style={{flex: 1, fontSize: 'calc(1rem + 1.5vw)', padding: '0 1rem', fontFamily: "'Playfair Display', serif"}}>
+            {String(this.name).split('').slice(0, 30).join('')}
           </div>
           <div onClick={() => this.main.setState({overview: null})}>
           <i className="far fa-times-circle -- blend"/>
@@ -50,15 +50,50 @@ export default class Overview extends Component {
             </div>
             <Stats main={this} github={this.links.github} org={this.org}/>
             <div className='data' >
-              <div className='links' style={{display: 'flex'}}>
+              <div className='links' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
               
-                <img className='tab' src={'images/app/links_side_tab.jpg'}/>
-                <img className='img' src={'images/app/github.png'} onClick={
-                  () => window.open(`https://github.com/${this.links.github}`,'_blank')
-                }/>
-                {this.links.domain && <img className='img' src={this.logo} onClick={
-                  () => window.open(this.links.domain,'_blank')
-                }/>}
+                {/* <img className='tab' src={'images/app/links_side_tab.jpg'}/> */}
+                <div 
+                  onMouseOver={
+                    (e) => document.getElementById('source').style.opacity = 1 
+                  }
+                  onMouseOut={
+                    () => document.getElementById('source').style.opacity = 0
+                  }
+                  style={{
+                    position: 'relative', 
+                    margin: '0.5rem', 
+                    overflow: 'hidden'
+                  }}>
+
+                  <div id='source' className='Overview-link-title' >SOURCE</div>
+                  <img className='Overview-link-img' src={'images/app/github.png'} onClick={
+                    () => window.open(`https://github.com/${this.links.github}`,'_blank')
+                  }/>
+                </div>
+                
+                
+                {this.links.domain && 
+                  <div 
+                  onMouseOver={
+                    () => document.getElementById('app').style.opacity = 1 
+                  }
+                  onMouseOut={
+                    () => document.getElementById('app').style.opacity = 0
+                  }
+                  style={{
+                    position: 'relative', 
+                    margin: '0.5rem', 
+                    overflow: 'hidden'
+                  }}>
+                    <div id='app' className='Overview-link-title'>APP</div>
+                    <img className='Overview-link-img' src={this.logo} onClick={
+                      () => window.open(this.links.domain,'_blank')
+                    }/>
+                  </div>
+                }
+                
+
               </div>
               {/* <div className='owner'>
                 <img className='tab' src={'images/app/owner_side_tab.jpg'}/>
