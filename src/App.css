@@ -238,6 +238,7 @@ border: 2px solid #1e2939;
 
 
 }
+<<<<<<< HEAD
 .blend {
   color: white;
   transition: color 0.45s;
@@ -413,6 +414,8 @@ border: 2px solid #1e2939;
   margin-bottom: 1rem;
 
 }
+=======
+>>>>>>> c0873bee5dc810bcbfd4ec1aa3daf6528cbd2d2c
 
 .App-Main-Blog_Post {
   height: 200px; 
@@ -540,6 +543,7 @@ border: 2px solid #1e2939;
 .App-Main-Footer img:hover {
   border: 7px solid #6689bf;
 }
+<<<<<<< HEAD
 .load {
   animation: spin 1.5s infinite linear forwards;
   color: black;
@@ -552,6 +556,10 @@ border: 2px solid #1e2939;
   from{transform: Rotate(0deg)}
   from{transform: Rotate(360deg)}
 }
+=======
+
+
+>>>>>>> c0873bee5dc810bcbfd4ec1aa3daf6528cbd2d2c
 
 
 @keyframes splash_lt{
