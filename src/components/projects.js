@@ -72,7 +72,7 @@ export default class Projects extends Component {
                 this.setState({
                   overview: <Overview main={this} links={{
                     github: 'track7dev/inkbook',
-                    domain:''
+                    domain:null
                   }} 
                   org={false}
                   name='InkBook' 

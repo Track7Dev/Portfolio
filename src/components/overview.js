@@ -56,9 +56,9 @@ export default class Overview extends Component {
                 <img className='img' src={'images/app/github.png'} onClick={
                   () => window.open(`https://github.com/${this.links.github}`,'_blank')
                 }/>
-                <img className='img' src={this.logo} onClick={
+                {this.domain && <img className='img' src={this.logo} onClick={
                   () => window.open(this.links.domain,'_blank')
-                }/>
+                }/>}
               </div>
               {/* <div className='owner'>
                 <img className='tab' src={'images/app/owner_side_tab.jpg'}/>
