@@ -76,7 +76,7 @@ export default class Projects extends Component {
                   }} 
                   org={false}
                   name='InkBook' 
-                  logo='images/projects/inkbook.jpg' 
+                  logo='images/projects/Inkbook.jpg' 
                   screenshot='images/projects/inkbook_product_demo.gif'
                   />
                 });
