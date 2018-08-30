@@ -8,7 +8,6 @@ import {
   Header,
   Menu
 } from './components';
-require('dotenv').config();
 
 class App extends Component {
   constructor(){
