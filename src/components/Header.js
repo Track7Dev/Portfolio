@@ -24,11 +24,7 @@ const Header = (props) => {
             }); 
           
         }}>
-<<<<<<< HEAD
         <i class="fas fa-bars" style={{fontSize: '2rem'}}/>
-=======
-        <i class="fas fa-bars"/>
->>>>>>> c0873bee5dc810bcbfd4ec1aa3daf6528cbd2d2c
       </div>
       
     </header>
