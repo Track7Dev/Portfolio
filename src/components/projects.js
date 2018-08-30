@@ -28,7 +28,7 @@ export default class Projects extends Component {
                   />
                 });
               }
-          }><img alt='leveld' width="100%" src={'images/projects/leveld.jpg'}/></div>
+          }><img alt='Leveld' width="100%" src={'images/projects/leveld.jpg'}/></div>
 
           {/* Fayetteville Tattoo Company */}
           <div onClick={
@@ -46,7 +46,7 @@ export default class Projects extends Component {
                   />
                 });
               }
-          }><img alt='leveld' width="100%" src={'images/projects/FTC.jpg'}/></div>
+          }><img alt='FTC' width="100%" src={'images/projects/FTC.jpg'}/></div>
           
           {/* Arbie */}
           <div onClick={
@@ -64,7 +64,7 @@ export default class Projects extends Component {
                   />
                 });
               }
-          }><img alt='leveld' width="100%" src={'images/projects/Arbie.jpg'}/></div>
+          }><img alt='Arbie' width="100%" src={'images/projects/Arbie.jpg'}/></div>
           
           {/* Inkbook */}
           <div onClick={
@@ -81,7 +81,7 @@ export default class Projects extends Component {
                   />
                 });
               }
-          }><img alt='leveld' width="100%" src={'images/projects/inkbook.jpg'}/></div>
+          }><img alt='Inkbook' width="100%" src={'images/projects/Inkbook.jpg'}/></div>
 
           
         </div>
