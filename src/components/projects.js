@@ -372,7 +372,7 @@ export default class Projects extends Component {
             
             source={
               {
-                link: 'https://something.com',
+                link: 'https://github.com/Track7Dev/portfolio',
                 name: 'Github',
               }
             }
