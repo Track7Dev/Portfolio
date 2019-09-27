@@ -1,0 +1,290 @@
+npm ERR! path /root/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall open
+npm ERR! enoent ENOENT: no such file or directory, open '/root/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-09-02T06_45_50_831Z-debug.log
+npm ERR! path /root/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall open
+npm ERR! enoent ENOENT: no such file or directory, open '/root/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-09-02T09_03_37_009Z-debug.log
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & lsof -t -i :7777 | xargs -t -n1 kill -9 ; node -r dotenv/config scripts/prod.js
+
+kill -9 
+
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+Creating an optimized production build...
+Starting the Production server...
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & lsof -t -i :7777 | xargs -t -n1 kill -9 ; node -r dotenv/config scripts/prod.js
+
+kill -9 
+
+Usage:
+ kill [options] <pid> [...]
+
+Options:
+ <pid> [...]            send signal to every <pid> listed
+ -<signal>, -s, --signal <signal>
+                        specify the <signal> to be sent
+ -l, --list=[<signal>]  list all signal names, or convert one to a name
+ -L, --table            list all signal names in a nice table
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+Creating an optimized production build...
+Starting the Production server...
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & lsof -t -i :7777 | xargs -t -n1 kill -9 ; node -r dotenv/config scripts/prod.js
+
+Creating an optimized production build...
+Starting the Production server...
+
+Compiled successfully.
+
+File sizes after gzip:
+
+  47.5 KB  build/static/js/main.ebe308d9.js
+  2.54 KB  build/static/css/main.85ffc975.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/2vY88Kr
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  http://localhost:3002/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & lsof -t -i :7777 | xargs -t  kill -9 && node -r dotenv/config scripts/prod.js
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  47.5 KB  build/static/js/main.ebe308d9.js
+  2.54 KB  build/static/css/main.85ffc975.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/2vY88Kr
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & lsof -t -i :7777 | xargs -t  kill -9 & node -r dotenv/config scripts/prod.js
+
+Creating an optimized production build...
+Starting the Production server...
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & lsof -t -i :7777 | xargs -t  kill -9 & node -r dotenv/config scripts/prod.js
+
+Creating an optimized production build...
+Starting the Production server...
+
+Compiled successfully.
+
+File sizes after gzip:
+
+  47.5 KB  build/static/js/main.ebe308d9.js
+  2.54 KB  build/static/css/main.85ffc975.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/2vY88Kr
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  http://localhost:3002/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> nohup node scripts/build.js & node -r dotenv/config scripts/prod.js
+
+Creating an optimized production build...
+Starting the Production server...
+
+Compiled successfully.
+
+File sizes after gzip:
+
+  47.5 KB  build/static/js/main.ebe308d9.js
+  2.54 KB  build/static/css/main.85ffc975.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/2vY88Kr
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  http://localhost:3002/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> node scripts/build.js & node -r dotenv/config scripts/prod.js
+
+Creating an optimized production build...
+Starting the Production server...
+
+Compiled successfully.
+
+File sizes after gzip:
+
+  47.5 KB  build/static/js/main.ebe308d9.js
+  2.54 KB  build/static/css/main.85ffc975.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/2vY88Kr
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  http://localhost:3002/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> lsof -t -i :7777 | xargs -t -n1 kill -9 && node -r dotenv/config scripts/prod.js
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> lsof -t -i :7777 | xargs -t -n1 kill -9 && node -r dotenv/config scripts/prod.js
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> lsof -t -i :7777 | xargs -t -n1 kill -9 ; node -r dotenv/config scripts/prod.js
+
+Starting the Production server...
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  http://localhost:7777/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+
+> portfolio@0.1.0 start /root/apps/Portfolio
+> lsof -t -i :7777 | xargs -t -n1 kill -9 ; node -r dotenv/config scripts/prod.js
+
+Starting the Production server...
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  http://localhost:7777/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
