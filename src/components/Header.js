@@ -23,7 +23,7 @@ const Header = (props) => {
             }); 
           
         }}>
-        <i className="fas fa-bars" style={{fontSize: '2rem'}}/>
+        {<i className="icofont-navigation-menu" style={{fontSize: '2rem'}}/>}
       </div>
       
     </header>

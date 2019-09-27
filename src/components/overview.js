@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Stats from './stats';
 import axios from 'axios';
-
+//import noScreenshot from '../../public/images/projects/no_screenshot.jpg'
 
 
 export default class Overview extends Component {
@@ -40,39 +40,49 @@ export default class Overview extends Component {
           </div>
           {/* ERROR: fixing with redux */}
           <div onClick={() => this.close()}> 
-          <i className="far fa-times-circle -- blend"/>
+          {process.env.NODE_ENV === 'production' ? <i className="far fa-times-circle -- blend"/> : 'X'}
           </div>
         </header>
 
         <div className='wrapper'>
           <div className='display'>
-            <div className='screenshot'><img alt='screenshot' width='100%'src={this.screenshot} /></div>
+            <div className='screenshot'><img onError={(e) => e.target.src = 'images/projects/no_screenshot.jpg'} alt='screenshot' width='100%'src={this.screenshot} /></div>
             <div className='bio'>
               {this.state.bio ? this.state.bio : 'No Description Available'}
             </div>
-            <Stats main={this} github={this.links.github} org={this.org}/>
+            {
+              this.links.github ?
+                <Stats main={this} github={this.links.github} org={this.org}/>
+              :
+                null
+            }
             <div className='data' >
               <div className='links' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
               
                 {/* <img className='tab' src={'images/app/links_side_tab.jpg'}/> */}
-                <div 
-                  onMouseOver={
-                    (e) => document.getElementById('source').style.opacity = 1 
-                  }
-                  onMouseOut={
-                    () => document.getElementById('source').style.opacity = 0
-                  }
-                  style={{
-                    position: 'relative', 
-                    margin: '0.5rem', 
-                    overflow: 'hidden'
-                  }}>
+                {
+                  this.links.github ?
+                    <div 
+                      onMouseOver={
+                        (e) => document.getElementById('source').style.opacity = 1 
+                      }
+                      onMouseOut={
+                        () => document.getElementById('source').style.opacity = 0
+                      }
+                      style={{
+                        position: 'relative', 
+                        margin: '0.5rem', 
+                        overflow: 'hidden'
+                      }}>
 
-                  <div id='source' className='Overview-link-title' >SOURCE</div>
-                  <img alt='github' className='Overview-link-img' src={'images/app/github.png'} onClick={
-                    () => window.open(`https://github.com/${this.links.github}`,'_blank')
-                  }/>
-                </div>
+                      <div id='source' className='Overview-link-title' >SOURCE</div>
+                      <img alt='github' className='Overview-link-img' src={'images/app/github.png'} onClick={
+                        () => window.open(`https://github.com/${this.links.github}`,'_blank')
+                      }/>
+                    </div>
+                  :
+                    null
+                }
                 
                 
                 {this.links.domain && 
