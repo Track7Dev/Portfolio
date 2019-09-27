@@ -21,6 +21,17 @@ class App extends Component {
       },      
     }
   }
+  closeMenu = () => {
+    this.setState({
+      animations: 
+        Object.assign({},{
+                headerMenu:{
+                  isStopped: false,
+                  open: false
+                }
+              })
+            });
+  }
   
   render() {
     return (
