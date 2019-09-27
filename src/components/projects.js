@@ -372,7 +372,7 @@ export default class Projects extends Component {
             
             source={
               {
-                link: 'https://github.com/Track7Dev/portfolio',
+                link: 'https://github.com/Gemini-Hackathon/arbie',
                 name: 'Github',
               }
             }
