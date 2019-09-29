@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <div >
         <div className="Resume" style={{border: '1px solid white', cursor: 'pointer', margin: '0.5rem'}} onClick={
-          () =>  window.open('Resume-BrandonFizer-SE.pdf','_blank')
+          () =>  window.open('BrandonFizer-Resume2019.pdf','_blank')
         }>RESUME</div>
         <img alt='contact' src={'images/app/github.png'} width="50rem" onClick={
           () => window.open('https://github.com/track7dev','_blank')

@@ -30,7 +30,7 @@ const Menu = (props) => {
         }>BLOG</p>
       
       <p onClick={
-          () =>  close(window.open('Resume-BrandonFizer-SE.pdf','_blank'))
+          () =>  close(window.open('BrandonFizer-Resume2019.pdf','_blank'))
         }>RESUME</p>
       <p onClick={
         () => close(window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body=")
