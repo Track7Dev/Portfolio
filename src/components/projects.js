@@ -384,7 +384,7 @@ export default class Projects extends Component {
               }
             }
             tech={['mongo', 'express','react', 'node']}
-            host='digitalocen'
+            host='digitalocean'
           />
           
           <div className='gap-cut-bottom' />
