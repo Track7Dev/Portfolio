@@ -8,7 +8,14 @@ class Project extends Component {
     this.syncFile = '/sync.jpg?t=' + Date.now();
   }
   componentWillMount(){
-     
+     switch(this.props.host){
+      case 'digitalocean':
+        return this.host = 'https://img.stackshare.io/service/295/DO_Logo_icon_blue.png';
+      case 'heroku':
+        return this.host = 'http://weibeld.net/assets/icons/heroku.png';
+      default:
+        return;
+     } 
   }
   createImg = (name,src, width, height) => 
   <img 
@@ -320,7 +327,7 @@ class Project extends Component {
                   }
                 }
               >
-                <img alt='host' width='80%' src={this.props.host} />
+                <img alt='host' width='80%' src={this.host} />
               </div>                
             :
               null
@@ -347,7 +354,7 @@ export default class Projects extends Component {
             company="Dark Dynasty K9's Georgia"
             name="DDK GA"
             domain={'https://ddkgeorgia.com'}
-            host={'https://img.stackshare.io/service/295/DO_Logo_icon_blue.png'}
+            host='digitalocean'
             logo='images/projects/ddk.png'
             info="Showcase application designed to manage and display the dogs available for the Georgia Branch of Dark Dynasty K9's"
             source={
@@ -363,7 +370,7 @@ export default class Projects extends Component {
             event="LambdaSchool 24hr Hackathon"
             name="Arbie"
             award="Most Likely To Become A Startup"
-            domain={'https://arbie-machine.herokuapp.com'}
+            domain={'https://arbie.track7dev.tech'}
             screenshot='images/projects/arbie_product_demo.gif'
             logo='images/projects/arbie.png'
             info="Application designed to find the Arbitrage of cryptocurrency
@@ -377,7 +384,7 @@ export default class Projects extends Component {
               }
             }
             tech={['mongo', 'express','react', 'node']}
-            host='http://weibeld.net/assets/icons/heroku.png'
+            host='digitalocen'
           />
           
           <div className='gap-cut-bottom' />
