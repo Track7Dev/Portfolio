@@ -46,7 +46,7 @@ class App extends Component {
 
 
               <div  className="App-Main-Profile" >
-                <img src={`images/brandon.jpg`} alt="Brandon Fizer" width="90%" height="90%"/>
+                <img src={`images/brandon.jpg?t=${Date.now()}`} alt="Brandon Fizer" width="90%" height="90%"/>
               </div>
               <div className="App-Main-Profile-Info">
                 <div>
