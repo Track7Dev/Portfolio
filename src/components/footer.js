@@ -21,7 +21,7 @@ const Footer = () => {
           () => window.location.href = "mailto:Brandon.M.Fizer@gmail.com?subject=SE%20Inquiry&body="
         }/>
         <img alt='contact' src={'images/app/mobile.png'} width="50rem"onClick={
-          () =>  window.location.href = "tel:+19107581607"
+          () =>  window.location.href = "tel:+19108139351"
         }/>
       </div>
     </div>
