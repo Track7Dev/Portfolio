@@ -1,0 +1,1 @@
+self.addEventListener('beforeinstallprompt', () => console.log('asking'))
