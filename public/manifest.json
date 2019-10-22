@@ -3,23 +3,23 @@
   "name": "Brandon Fizer",
   "icons": [
     {
-      "src": "assets/icons/favicon.ico",
-      "type": "image/png",
+      "src": "/favicon.ico",
+      "type": "icon",
       "sizes": "48x48"
     },
     {
-      "src": "assets/icons/favicon.ico",
-      "type": "image/png",
+      "src": "/favicon.ico",
+      "type": "icon",
       "sizes": "96x96"
     },
     {
-      "src": "assets/icons/favicon.ico",
-      "type": "image/png",
+      "src": "/favicon.ico",
+      "type": "icon",
       "sizes": "144x144"
     },
     {
-      "src": "assets/icons/favicon.ico",
-      "type": "image/png",
+      "src": "/favicon.ico",
+      "type": "icon",
       "sizes": "192x192"
     }
   ],
