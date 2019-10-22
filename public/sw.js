@@ -1,1 +1,1 @@
-self.addEventListener('beforeinstallprompt', () => console.log('asking'))
+self.addEventListener('fetch', () => console.log('asking'))
